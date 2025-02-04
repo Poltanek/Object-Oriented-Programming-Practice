@@ -19,13 +19,10 @@ public class Week1 {
         System.out.println("a<=b " + (a <= b));
         System.out.println("c<=b " + (c <= b));
 
-        /* If the 'myString variable is declared and if the print statement
-         * Then the
-         *
-         */
         String myString = "abc";
         System.out.println(myString.equals("abc"));
         System.out.println(myString.equals("awdawd"));
+
         sample();
         loop();
     }
@@ -37,9 +34,9 @@ public class Week1 {
         int b = 10;
         int c = 10;
 
-        System.out.println("(a > b) && (b > c) " + ((a>b) && (b>c)));
-        System.out.println("(a > b) || (b > c) " + ((a>b) || (b>c)));
-        System.out.println("!(a > b): " + (!(a>b)));
+        System.out.println("(a > b) && (b > c) " + ((a > b) && (b > c)));
+        System.out.println("(a > b) || (b > c) " + ((a > b) || (b > c)));
+        System.out.println("!(a > b): " + (!(a > b)));
 
         if ((a > b) && (b >= c)) {
             System.out.println("Both conditions are true! ");
@@ -66,19 +63,23 @@ public class Week1 {
     }
 
     public static void loop() {
-
         System.out.println("-------------------------");
-        for (int i = 1; i < 10; i++) {
-            System.out.print(i + " "); // prints horizontally
-            System.out.println(i); // prints vertically
-        }
 
+        // Horizontal printing
+        for (int i = 1; i < 10; i++) {
+            System.out.print(i + " "); // prints numbers in one line
+        }
+        System.out.println(); // Move to a new line after the loop
+
+        // Vertical printing using while loop
         int i = 1;
         while (i <= 10) {
             System.out.println(i);
             i++;
         }
 
+        // Reset i for the do-while loop
+        i = 1;
         do {
             System.out.println(i);
             i++;
