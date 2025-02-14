@@ -55,7 +55,14 @@ public class Cat {
     }
 
     public static void main(String[] args) {
-        
+        Cat myCat = new Cat("Whisker", "4kg", "Siamese", "Model-X", "White");
+        System.out.println("Cat Name: " + myCat.getName());
+        System.out.println("Cat Weight: " + myCat.getWeight());
+        System.out.println("Cat Breed: " + myCat.getBreed());
+        System.out.println("Cat Model: " + myCat.getModel());
+        System.out.println("Cat Colour: " + myCat.getColour());
+
+        myCat.play();
     }
 
 
