@@ -59,7 +59,7 @@ public class Task {
         * */
 
         System.out.println("===============================");
-        for(int i = 1; i<=15; i++)
+        for(int i = 1; i<=10; i++)
         {
             System.out.println(i);
         }
